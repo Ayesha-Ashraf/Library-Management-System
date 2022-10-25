@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        Learn about <a href="https://docs.microsoft.com/aspnet/core">
+            Library_Management__System       </a>.
+    </p>
+</div>
+@foreach (var item in Model.Books)
+{
+   <h3>@item.name</h3>
+   <h3>@item.book_id</h3>
+   <img src="@item.image"  />
+    
+}
