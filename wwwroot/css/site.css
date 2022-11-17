@@ -1,10 +1,43 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+#bimage {
+    height: 90%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+#bquantity {
+    width: 1%;
+    display: inline;
+}
+
+
+#bcontainer {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+#btitle {
+    display: block;
+    text-align: center;
+    font: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#bprice {
+    display: block;
+    text-align: center;
+    font: center;
+    font-size: 16px;
+    color: darkgrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Provide sufficient contrast against white background */

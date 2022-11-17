@@ -1,20 +1,20 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Book";
 }
 
 <div class="text-center">
     <h1 cl ass="display-4">AAESH Shop</h1>
     <p>
-        
-            Library_Management__System       
+
+        Library_Management__System
     </p>
 </div>
 <div class="row">
-    @foreach (var book in Model.Books)   
-{
-    <div id="bcontainer" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+    @foreach (var book in Model.Books)
+    {
+        <div id="bcontainer" class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <img id="bimage" src="@book.image" alt="@book.name" />
             <span id="btitle">@book.name</span>
             <span id="bprice">Rs. Coming Soon</span>

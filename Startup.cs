@@ -29,8 +29,8 @@ namespace Library_Management__System
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-
-             services.AddTransient<jsonfileBookService>();
+            services.AddControllers();
+            services.AddTransient<jsonfileBookService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,12 +57,13 @@ namespace Library_Management__System
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-               /* endpoints.MapGet("/BookRecord"),(context) =>
-                { 
-                    IEnumerable <Book> BookRecord =app.ApplicationServices.GetServices<jsonfileBookService ().getBookRecord >
-                    string newBookRecord=JsonSerializer.Serialize<IEnumerable<Book>>(BookRecord);
-                    return context.Response.WriteAsync(newBookRecord);
-                }*/
+                endpoints.MapControllers();
+                /* endpoints.MapGet("/BookRecord"),(context) =>
+                 { 
+                     IEnumerable <Book> BookRecord =app.ApplicationServices.GetServices<jsonfileBookService ().getBookRecord >
+                     string newBookRecord=JsonSerializer.Serialize<IEnumerable<Book>>(BookRecord);
+                     return context.Response.WriteAsync(newBookRecord);
+                 }*/
             });
         }
     }
